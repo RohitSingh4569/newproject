@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 FROM base AS deps
 # Copy only package.json and package-lock.json for dependency installation
 COPY --link package.json package-lock.json ./
-# Use npm ci for deterministic, clean installs and cache npm
+# Use npm ci for deterministic, clean installs and cache npm hhvkh
 RUN --mount=type=cache,target=/root/.npm \
     npm ci --production
 
