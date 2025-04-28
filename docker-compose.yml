@@ -9,7 +9,7 @@ services:
     volumes:
       - blog-storage:/usr/src/app/storage/thumbnails
     ports:
-      - "8001:8001"  # Map host port 8001 to container port 8001
+      - "8001:8001"  # Map host port 8001 to container port 8001 jnjbui
 
 volumes:
   blog-storage:
